@@ -1,0 +1,23 @@
+{
+  "name": "pos-emulator",
+  "version": "1.0.0",
+  "description": "PoS using mqtt broker client test",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denissys/pos-emulator.git"
+  },
+  "author": "Denis Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denissys/pos-emulator/issues"
+  },
+  "homepage": "https://github.com/denissys/pos-emulator#readme",
+  "dependencies": {
+    "mqtt": "^2.15.0",
+    "yaml-config": "^0.3.0"
+  }
+}

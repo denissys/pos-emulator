@@ -1,0 +1,12 @@
+default:
+  mqtt:
+    protocol: mqtt://
+    addrees: localhost
+    port: 1884
+    topic: pos-state
+    qos:
+      level: 1
+      retain: true
+  pos:
+    publishState:
+      timeInMs: 5000
