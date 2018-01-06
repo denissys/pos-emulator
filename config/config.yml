@@ -1,12 +1,19 @@
 default:
   mqtt:
-    protocol: mqtt://
+    protocol: mqtt # mqtt, tcp
     addrees: localhost
-    port: 1884
+    port: 1883
     topic: pos-state
     qos:
       level: 1
       retain: true
   pos:
+    register:
+      seller:
+        id: 1
+        name: Pizzaria do Denis
+      activity:
+        type: restaurant
     publishState:
-      timeInMs: 5000
+      interval:
+        timeInMs: 5000 # 60000 = One Minute
