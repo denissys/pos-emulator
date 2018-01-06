@@ -32,8 +32,13 @@ default:
     port: Port Number, example 1883 to default installation
     topic: Name of topic to publish messages
     qos:
-      level: 1
-      retain: true
+      level: 0 = guarantees a best effort delivery
+             1 = guaranteed that a message will be delivered
+             2 = guarantees that each message is received only once by the counterpart
+      retain: true = retained messages received and queued messages and if the total exceeds 
+                     autosave_interval then the in-memory database will be saved to disk
+              false = will save the in-memory database to disk by treating autosave_interval 
+                      as a time in seconds
   pos:
     register:
       seller:
