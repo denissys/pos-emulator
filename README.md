@@ -1,6 +1,6 @@
 # client-emulator
 
-Client Emulator is a simple application to test the publish a keep-alive state, using:
+Client Emulator is a simple application to test the publishing of keep-alive state of one dispositive, using:
 - mqtt (http://mqtt.org/)
 
 ## Installation
