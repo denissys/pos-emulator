@@ -1,17 +1,22 @@
-# pos-emulator
+# client-emulator
 
-PoS (Point of Sale) Emulator is a simple application to publish a keep-alive state, using:
-- mqtt
+Client Emulator is a simple application to test the publish a keep-alive state, using:
+- mqtt (http://mqtt.org/)
 
 ## Installation
 
 Install via git clone:
 
 ```bash
-git clone https://github.com/denissys/pos-emulator
-cd pos-emulator
+git clone https://github.com/denissys/client-emulator
+cd client-emulator
 npm install
 ```
+
+## Pre-requirements
+
+You need install: 
+- mqtt
 
 ## Run
 
@@ -39,10 +44,10 @@ default:
                      autosave_interval then the in-memory database will be saved to disk
               false = will save the in-memory database to disk by treating autosave_interval 
                       as a time in seconds
-  pos:
-    register:
-      seller:
-        id: ID of seller
+  client:
+    name: Type of dispositive to emulte, example: app_seller, app_client, iot_printer
+    dispositive:
+        id: ID of client to turn the dispositive unique
     publishState:
       interval:
         timeInMs: Time of interval to publish keep-alive state on MQTT

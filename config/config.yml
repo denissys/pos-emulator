@@ -7,13 +7,10 @@ default:
     qos:
       level: 1
       retain: true
-  pos:
-    register:
-      seller:
-        id: 1
-        name: Pizzaria do Denis
-      activity:
-        type: restaurant
+  client:
+    name: app_seller
+    dispositive:
+      id: 16
     publishState:
       interval:
         timeInMs: 5000 # 60000 = One Minute
