@@ -13,4 +13,4 @@ default:
       id: 16
     publishState:
       interval:
-        timeInMs: 5000 # 60000 = One Minute
+        timeInMs: 60000 # 60000 = One Minute
